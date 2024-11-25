@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/MDIApplication.java to edit this template
  */
 package Controlador;
-import Modelo.Revista;
+
 import Vista.*;
 /**
  *
@@ -11,7 +11,7 @@ import Vista.*;
  */
 public class SistemaPublicacionesMDI extends javax.swing.JFrame {
     private JInternalFrameAutores Autores;//Objeto Formulario Autores
-   private JInternalFrameRevistas Revista;
+
 
     /**
      * Creates new form SistemaPublicacionesMDI
@@ -24,9 +24,7 @@ public class SistemaPublicacionesMDI extends javax.swing.JFrame {
         //Agregar los JInternalFrame al desktopane del MDI
         desktopPane.add(Autores);
         
-        Revista=new JInternalFrameRevistas();
-        
-        desktopPane.add(Revista);
+       
      
     }
 
@@ -149,8 +147,7 @@ public class SistemaPublicacionesMDI extends javax.swing.JFrame {
 
     private void verRevistasMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verRevistasMenuItemActionPerformed
       
-        Revista.obtenerDatos();
-        Revista.setVisible(true);
+     
         
     }//GEN-LAST:event_verRevistasMenuItemActionPerformed
 
